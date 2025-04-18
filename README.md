@@ -1,4 +1,4 @@
-# Book Finder App 📚
+# BookVerse App 📚
 
 [![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
 [![Redux](https://img.shields.io/badge/Redux-v4.2.1-purple.svg)](https://redux.js.org/)
