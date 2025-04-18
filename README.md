@@ -7,28 +7,22 @@
 
 A modern web application for discovering and managing books using Google Books API with Firebase integration.
 
-![App Screenshot](https://via.placeholder.com/1200x600/2D3748/FFFFFF?text=Book+App+Demo) 
-### Home Page
-![Home Page](./screeshots/HomePage.png)
-![Home Page](./screeshots/HomePage_1.png)
-![Home Page](./screeshots/HomePage_2.png)
-![Home Page](./screeshots/HomePage_3.png)
+## App Screenshots 📸
+
+![Home Page](./screenshots/HomePage.png)
+![Home Page](./screenshots/HomePage_1.png)
+![Home Page](./screenshots/HomePage_2.png)
+![Home Page](./screenshots/HomePage_3.png)
 
 ### Notes Page
-![Notes Page](./screeshots/Notes.png)
+![Notes Page](./screenshots/Notes.png)
 
 ### Translator Page
-![Translator Page](./screeshots/Translator.png)
+![Translator Page](./screenshots/Translator.png)
 
 ### Footer
-![Footer](./screeshots/Footer.png)
+![Footer](./screenshots/Footer.png)
 
-
-
-
-
-
-*(Replace with actual screenshot URLs)*
 
 ## Features ✨
 
