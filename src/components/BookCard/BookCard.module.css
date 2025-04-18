@@ -1,0 +1,104 @@
+
+/* BookCard Styles */
+.bookCard {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.bookCard:hover {
+    transform: translateY(-5px);
+}
+
+.bookCard img {
+    width: 280px;
+    height: 406px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.bookImageContainer {
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.author {
+    letter-spacing: -.04em;
+    color: #b4afaf;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.16667;
+}
+
+.title {
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.125;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.quickView {
+    width: 100%;
+    height: 27%;
+    opacity: 0;
+    user-select: none;
+    background: #eac645;
+    border-radius: 0 0 8px 8px;
+    transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+}
+
+.bookCard:hover .quickView {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quickViewText {
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28571;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 375px) {
+    .bookCard img {
+        width: 270px;
+        height: 370px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bookCard {
+        height: auto;
+    }
+    .bookCard img {
+        width: 218px;
+        height: 316px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bookCard img {
+        width: 180px;
+        height: 256px;
+    }
+}

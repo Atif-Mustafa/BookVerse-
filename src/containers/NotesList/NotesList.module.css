@@ -1,0 +1,90 @@
+.notesListContainer {
+    max-width: 400px;
+    padding: 1rem 1rem 4rem 1rem;
+    border-radius: .5rem;
+    /* min-height: 50vh; */
+    /* background-color: brown; */
+    position: relative;
+    border: 1px solid gray;
+}
+
+.topSection{
+    margin-bottom: 4rem; 
+
+ 
+    /* overflow: scroll; */
+    /* height: 400px; */
+    /* overflow-x: hidden; */
+}
+
+.content{
+    height: 80%;
+}
+
+.btnContainer {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    display: flex;
+    gap: 1rem;
+    /* box-sizing: border-box; */
+
+}
+
+.btn {
+    padding: .5rem;
+    color: white;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    transition: .5s;
+    border-radius: 100%;
+    font-weight: 900;
+}
+
+.btn:not(:disabled):hover {
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: transparent;
+    /* transform: scale(.9); */
+}
+
+
+.btn:disabled {
+    cursor: not-allowed;
+
+}
+
+.deleteBtn{
+    background-color: red;
+    border: none;
+    padding: .5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteBtn:hover{
+    box-shadow: 1px 1px 2px 1px rgb(244, 179, 179);
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

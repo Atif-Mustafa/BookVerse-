@@ -1,0 +1,176 @@
+.notesContainer {
+    /* position: absolute; */
+    /* top: 53px; */
+    /* background: aquamarine; */
+    /* left: 0; */
+    min-height: 100vh;
+    background: url("https://i.pinimg.com/originals/f4/35/28/f435281885f879de2b207fbe9f5d30d2.jpg");
+    background-position: top;
+    background-size: cover;
+    background-origin: ;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    filter: brightness(95%);
+    display: flex;
+    /* align-items: center; */
+    gap: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+
+}
+
+@media screen and (max-width: 767px) {
+    .notesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroSection {
+        width: 100% !important;
+    }
+
+
+}
+
+.heroSection {
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 2rem;
+    width: 50%;
+    /* margin: auto; */
+    gap: 2rem;
+
+    h1 {
+        font-size: 2.2rem;
+        color: brown;
+    }
+
+    p {
+        color: blue;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+.innerNotesContainer {}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 10%;
+
+    h1 {
+        text-align: center;
+        font-family: cursive;
+        color: #8a2be2;
+        font-weight: 700;
+        text-shadow: 2px 1px black
+    }
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        /* border-radius: 1rem;
+        overflow: hidden; */
+
+
+        label {}
+    }
+
+}
+
+.title input,
+.content textarea {
+    padding: .5rem;
+    width: 100%;
+}
+
+.title input {
+    border: 2px solid blue;
+}
+
+.content textarea {
+    /* width: 493px; */
+    border: 2px solid blue;
+    border-top: none;
+    background-image: url('https://img.freepik.com/premium-photo/back-school-concept-top-view-photo-notepads-pen-pencilcase-mini-staplers-adhesive-tape-round-correction-tape-binder-clips-isolated-white-background-with-blank-space_352249-8996.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 170px;
+
+}
+
+
+.btn {
+    align-items: center;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    /* display: flex;
+    flex-direction: column; */
+    font-family: Codec cold, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    /* justify-content: center; */
+    letter-spacing: .4px;
+    line-height: 1;
+    /* max-width: 100%; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    /* text-decoration: none; */
+    margin-top: 1rem;
+    transition: .3s;
+}
+
+.btn:hover {
+    outline-offset: 1px;
+    outline: 5px solid skyblue;
+}
+
+
+.yourNotesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    input {
+        border: 2px solid orangered;
+        border-radius: 5px;
+        padding: .5rem;
+    }
+}
+/* 
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */

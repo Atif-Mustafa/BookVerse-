@@ -1,0 +1,329 @@
+/* 
+.container{
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center; 
+}
+
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    z-index: 999;
+}
+
+.innerContainer {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #111;
+    border-radius: 1.1rem;
+    margin-block: 3.1rem;
+    padding: 40px 24px;
+    position: relative;
+
+}
+
+.closeButton {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    font-size: 1.5rem;
+}
+
+
+.closeButton:hover{
+    background-color: orangered;
+    color: #fff;
+    transition: .2s;
+}
+
+.detailsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.imageContainer img{
+    width: 100%;
+
+}
+
+.textContainer{
+
+    h1{
+        color: black;
+    }
+    
+}
+.span{
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    font-size: 1.1rem;
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 1rem;
+    margin-block: 1rem;
+    justify-content: center;
+
+    button{
+        border: 2px solid orangered;
+        border-radius: 1rem;
+        background-color: #fff;
+        padding: .2rem .3rem;
+        transition: .5s;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: orangered;
+        color: #fff;
+    }
+}
+
+.read{
+    border: 2px solid orangered;
+    border-radius: 1rem;
+    color: #fff;
+    background-color: rgb(247, 84, 24);
+    padding: 1rem 2rem;
+    transition: .3s;
+    margin: 2rem auto;
+    display: block;
+}
+.read:hover{
+    background-color: orangered;
+    outline-offset: 1px;
+    outline: 5px solid skyblue
+}
+
+@media screen and (max-width: 767px) {
+    .detailsContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+} */
+
+:root {
+    --primary-color: #ff4500;
+    --secondary-color: #87ceeb;
+    --text-color: #111;
+    --bg-color: #fff;
+    --border-radius: 12px;
+    --transition-timing: 0.3s ease;
+  }
+  
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    z-index: 1000;
+    overflow-y: auto;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(3px);
+  }
+  
+  .innerContainer {
+    width: 100%;
+    background-color: var(--bg-color);
+    border: 2px solid var(--text-color);
+    border-radius: var(--border-radius);
+    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all var(--transition-timing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
+  
+  .closeButton:hover,
+  .closeButton:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: rotate(90deg);
+  }
+  
+  .detailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .imageContainer {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    aspect-ratio: 2/3;
+  }
+  
+  .textContainer {
+    flex: 2 1 400px;
+    text-align: left;
+  }
+  
+  .textContainer h1 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  
+  .span {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    display: inline-block;
+    min-width: 120px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .actionButtons a {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    transition: all var(--transition-timing);
+    cursor: pointer;
+    font-weight: 600;
+    color: blue
+  }
+  
+  .actionButtons a:hover,
+  .actionButtons a:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+  }
+  
+  .read {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 0.75rem 2rem;
+    margin: 2rem auto;
+    font-weight: 600;
+    transition: all var(--transition-timing);
+  }
+  
+  .read:hover,
+  .read:focus-visible {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      /* width: 95%; */
+      /* padding: 1rem; */
+    }
+  
+    .innerContainer {
+      padding: 1.5rem 1rem;
+      /* margin: 1.5rem 0; */
+    }
+  
+    .detailsContainer {
+      /* flex-direction: column; */
+      gap: 1.5rem;
+    }
+  
+    .textContainer {
+      text-align: center;
+    }
+  
+    .actionButtons {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .closeButton {
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  
+    .read {
+      width: 100%;
+    }
+  }

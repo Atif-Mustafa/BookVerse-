@@ -1,0 +1,70 @@
+
+/* BookList Styles */
+.booksContainer {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 2rem;
+    gap: 1rem;
+}
+
+.categoryContainer {
+    margin-bottom: 40px;
+}
+
+.category {
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    color: #b4afaf;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.28571;
+    display: block;
+}
+
+.seeMoreBtn {
+    letter-spacing: -.01em;
+    text-transform: uppercase;
+    color: #111;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid orangered;
+    border-radius: 40px;
+    margin-left: auto;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    display: block;
+    cursor: pointer;
+}
+
+.seeMoreBtn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.noResults {
+    text-align: center;
+    color: #e74c3c;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .booksContainer {
+        flex-wrap: wrap;
+        gap: 40px 25px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .booksContainer {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,57 @@
+
+.heroSection{
+    background: linear-gradient(#0009, #000000b3), url('https://media.istockphoto.com/id/175397396/photo/books-pattern.jpg?s=1024x1024&w=is&k=20&c=NUKMOclJtVjIs-sMtBplxH3S9SjTSvV__URmkY_lX2w=');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    flex-direction: column;
+    color: white;
+}
+
+.searchSection{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    
+    input{
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    button{
+        padding: .5rem;
+        border-radius: 100%;
+        border: 2px solid #fff; 
+        background-color: orangered;
+        color: white;
+        font-size: 1.4rem;
+        box-sizing: border-box;
+    }
+}
+
+.none{
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        padding-inline: 1rem;
+    }
+}
+@media screen and (min-width: 768px){
+    
+    header{
+        padding-inline: 2rem;
+    }
+    
+}
